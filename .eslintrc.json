@@ -1,0 +1,82 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jasmine": true
+  },
+  "parser": "babel-eslint",
+
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": [
+    "prettier"
+  ],
+
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+
+        ],
+        "extensions": [".js", ".jsx", ".json", ".ts", ".tsx"]
+      },
+      "node": {
+        "paths": ["./src"],
+        "extensions": [".js", ".jsx", ".json", ".ts", ".tsx"]
+      }
+    }
+  },
+
+  "rules": {
+    "prettier/prettier": "error",
+
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "camelcase": "off",
+    "no-class-assign":"off",
+    "consistent-return":"off",
+    "prefer-destructuring":"off",
+    "react/jsx-filename-extension":"off",
+    "react/forbid-prop-types":"off",
+    "react/require-default-props":"off",
+    "no-nested-ternary":"off",
+    "no-param-reassign":"off",
+    "no-shadow":"off",
+    "no-else-return":"off",
+    "no-lonely-if":"off",
+
+    "comma-dangle": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "react/prop-types": "off",
+    "react/no-multi-comp": "off",
+    "react/button-has-type": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/label-has-for": "off",
+    "guard-for-in": "off",
+    "no-restricted-syntax": "off",
+    "no-continue": "off",
+    "no-await-in-loop": "off",
+    "react/no-array-index-key": "off",
+    "strict": 0,
+
+    "semi": [
+      "error",
+      "never"
+    ],
+    "no-console":"off"
+  }
+}

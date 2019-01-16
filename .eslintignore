@@ -1,0 +1,12 @@
+dist/*
+public/*
+.idea/*
+test/*
+**/test.js
+tools/*
+package.json
+package-lock.json
+webpack.config.js
+node_module/*
+/node_modules/
+src/**/*.d.ts
